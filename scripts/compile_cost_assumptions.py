@@ -3201,13 +3201,13 @@ def energy_penalty(cost_dataframe: pd.DataFrame) -> pd.DataFrame:
             boiler = "electric boiler steam"
             feedstock = "solid biomass"
             co2_capture = cost_dataframe.loc[(feedstock, "CO2 intensity"), "value"]
+        elif "biogas" in tech_name:
+            boiler = "gas boiler steam"
+            co2_capture = cost_dataframe.loc[(tech_name, "CO2 stored"), "value"]
         elif "gas" in tech_name:
             boiler = "gas boiler steam"
             feedstock = "gas"
             co2_capture = cost_dataframe.loc[(feedstock, "CO2 intensity"), "value"]
-        elif "biogas" in tech_name:
-            boiler = "gas boiler steam"
-            co2_capture = cost_dataframe.loc[(tech_name, "CO2 stored"), "value"]
         else:
             boiler = "solid biomass boiler steam"
             feedstock = "solid biomass"
@@ -3240,9 +3240,7 @@ def energy_penalty(cost_dataframe: pd.DataFrame) -> pd.DataFrame:
         )
         cost_dataframe.loc[(tech_name, "investment"), "further description"] = ""
 
-        if cost_dataframe.loc[(tech_name, "VOM"), "value"]:
-            break
-        else:
+        if (tech_name, "VOM") not in cost_dataframe.index:
             cost_dataframe.loc[(tech_name, "VOM"), "value"] = 0.0
 
         cost_dataframe.loc[(tech_name, "VOM"), "value"] = (

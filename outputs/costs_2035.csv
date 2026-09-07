@@ -639,9 +639,10 @@ biogas,investment,938.7177,EUR/kW,"Danish Energy Agency, inputs/data_sheets_for_
 biogas,lifetime,20.0,years,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx","81 Biogas, Basic plant, small:  Technical lifetime",2020.0
 biogas CC,CO2 stored,0.1447,tCO2/MWh_th,"Stoichiometric calculation, doi:10.1016/j.apenergy.2022.120016",,
 biogas CC,FOM,7.7769,%/year,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx","81 Biogas, Basic plant, small:  Total O&M",2020.0
+biogas CC,VOM,,EUR/MWh,Combination of biogas CC and gas boiler steam,,
 biogas CC,capture rate,0.9,per unit,Assumption based on doi:10.1016/j.biombioe.2015.01.006,,
-biogas CC,efficiency,1.0,per unit,Assuming input biomass is already given in biogas output,,
-biogas CC,investment,938.7177,EUR/kW,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx","81 Biogas, Basic plant, small:  Specific investment",2020.0
+biogas CC,efficiency,0.9031,per unit,Combination of biogas CC and gas boiler steam,,
+biogas CC,investment,1044.0041,EUR/kW,Combination of biogas CC and gas boiler steam,,2020.0
 biogas CC,lifetime,20.0,years,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx","81 Biogas, Basic plant, small:  Technical lifetime",2020.0
 biogas manure,fuel,19.8729,EUR/MWhth,"JRC ENSPRESO ca avg for MINBIOGAS1 (manure), ENS_BaU_GFTM",,2010.0
 biogas plus hydrogen,FOM,4.0,%/year,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",99 SNG from methan. of biogas:  Fixed O&M,2020.0
@@ -807,11 +808,11 @@ central solid biomass CHP,investment,3493.3,EUR/kW_e,"Danish Energy Agency, inpu
 central solid biomass CHP,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Technical lifetime",2015.0
 central solid biomass CHP,p_nom_ratio,1.0,per unit,, from old pypsa cost assumptions,2015.0
 central solid biomass CHP CC,FOM,2.8627,%/year,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Fixed O&M",2015.0
-central solid biomass CHP CC,VOM,4.8732,EUR/MWh_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Variable O&M ",2015.0
+central solid biomass CHP CC,VOM,14.493,EUR/MWh_e,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
 central solid biomass CHP CC,c_b,0.3485,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Cb coefficient",2015.0
 central solid biomass CHP CC,c_v,1.0,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Cv coefficient",2015.0
-central solid biomass CHP CC,efficiency,0.2687,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Electricity efficiency, net, annual average",2015.0
-central solid biomass CHP CC,efficiency-heat,0.8257,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Heat efficiency, net, annual average",2015.0
+central solid biomass CHP CC,efficiency,0.2092,per unit,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
+central solid biomass CHP CC,efficiency-heat,0.9455,per unit,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
 central solid biomass CHP CC,investment,5061.4763,EUR/kW_e,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
 central solid biomass CHP CC,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Technical lifetime",2015.0
 central solid biomass CHP powerboost CC,FOM,2.8627,%/year,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Fixed O&M",2015.0
@@ -921,9 +922,9 @@ direct firing gas,efficiency,1.0,per unit,"Danish Energy Agency, inputs/technolo
 direct firing gas,investment,15.105,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Nominal investment,2019.0
 direct firing gas,lifetime,15.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Technical lifetime,2019.0
 direct firing gas CC,FOM,1.1667,%/year,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Fixed O&M,2019.0
-direct firing gas CC,VOM,0.2807,EUR/MWh,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Variable O&M,2019.0
-direct firing gas CC,efficiency,1.0,per unit,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx","312.a Direct firing Natural Gas:  Total efficiency, net, annual average",2019.0
-direct firing gas CC,investment,15.105,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Nominal investment,2019.0
+direct firing gas CC,VOM,0.6646,EUR/MWh,Combination of direct firing gas CC and gas boiler steam,,2019.0
+direct firing gas CC,efficiency,0.8719,per unit,Combination of direct firing gas CC and gas boiler steam,,2019.0
+direct firing gas CC,investment,23.5774,EUR/kW,Combination of direct firing gas CC and gas boiler steam,,2019.0
 direct firing gas CC,lifetime,15.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.a Direct firing Natural Gas:  Technical lifetime,2019.0
 direct firing solid fuels,FOM,1.4773,%/year,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Fixed O&M,2019.0
 direct firing solid fuels,VOM,0.3339,EUR/MWh,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Variable O&M,2019.0
@@ -931,9 +932,9 @@ direct firing solid fuels,efficiency,1.0,per unit,"Danish Energy Agency, inputs/
 direct firing solid fuels,investment,221.54,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Nominal investment,2019.0
 direct firing solid fuels,lifetime,15.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Technical lifetime,2019.0
 direct firing solid fuels CC,FOM,1.4773,%/year,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Fixed O&M,2019.0
-direct firing solid fuels CC,VOM,0.3339,EUR/MWh,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Variable O&M,2019.0
-direct firing solid fuels CC,efficiency,1.0,per unit,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx","312.b Direct firing Sold Fuels:  Total efficiency, net, annual average",2019.0
-direct firing solid fuels CC,investment,221.54,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Nominal investment,2019.0
+direct firing solid fuels CC,VOM,2.2014,EUR/MWh,Combination of direct firing solid fuels CC and solid biomass boiler steam,,2019.0
+direct firing solid fuels CC,efficiency,0.7787,per unit,Combination of direct firing solid fuels CC and solid biomass boiler steam,,2019.0
+direct firing solid fuels CC,investment,431.5895,EUR/kW,Combination of direct firing solid fuels CC and solid biomass boiler steam,,2019.0
 direct firing solid fuels CC,lifetime,15.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",312.b Direct firing Sold Fuels:  Technical lifetime,2019.0
 dry bulk carrier Capesize,FOM,4.0,%/year,"Based on https://www.hellenicshippingnews.com/capesize-freight-returns-below-operating-expense-levels-but-shipowners-reject-lay-ups/, accessed: 2022-12-03.","5000 USD/d OPEX, exchange rate: 1.15 USD = 1 EUR; absolute value calculate relative to investment cost.",2020.0
 dry bulk carrier Capesize,capacity,180000.0,t,-,"DWT; corresponds to size of Capesize bulk carriers which have previously docked at the habour in Hamburg, Germany. Short of 200 kt limit for VLBCs.",2020.0
@@ -1203,9 +1204,9 @@ solid biomass boiler steam,efficiency,0.89,per unit,"Danish Energy Agency, input
 solid biomass boiler steam,investment,581.3136,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Nominal investment,2019.0
 solid biomass boiler steam,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Technical lifetime,2019.0
 solid biomass boiler steam CC,FOM,6.1236,%/year,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Fixed O&M,2019.0
-solid biomass boiler steam CC,VOM,2.8564,EUR/MWh,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Variable O&M,2019.0
-solid biomass boiler steam CC,efficiency,0.89,per unit,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx","311.1e Steam boiler Wood:  Total efficiency, net, annual average",2019.0
-solid biomass boiler steam CC,investment,581.3136,EUR/kW,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Nominal investment,2019.0
+solid biomass boiler steam CC,VOM,6.5659,EUR/MWh,Combination of solid biomass boiler steam CC and solid biomass boiler steam,,2019.0
+solid biomass boiler steam CC,efficiency,0.693,per unit,Combination of solid biomass boiler steam CC and solid biomass boiler steam,,2019.0
+solid biomass boiler steam CC,investment,911.8133,EUR/kW,Combination of solid biomass boiler steam CC and solid biomass boiler steam,,2019.0
 solid biomass boiler steam CC,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_industrial_process_heat.xlsx",311.1e Steam boiler Wood:  Technical lifetime,2019.0
 solid biomass to hydrogen,FOM,4.25,%/year,"Zech et.al. DBFZ Report Nr. 19. Hy-NOW - Evaluierung der Verfahren und Technologien für die Bereitstellung von Wasserstoff auf Basis von Biomasse, DBFZ, 2014",,2014.0
 solid biomass to hydrogen,capture rate,0.9,per unit,Assumption based on doi:10.1016/j.biombioe.2015.01.006,,
@@ -1227,12 +1228,12 @@ waste CHP,efficiency-heat,0.762,per unit,"Danish Energy Agency, inputs/technolog
 waste CHP,investment,8307.058,EUR/kW_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Nominal investment ",2015.0
 waste CHP,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Technical lifetime",2015.0
 waste CHP CC,FOM,2.3408,%/year,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Fixed O&M",2015.0
-waste CHP CC,VOM,27.8042,EUR/MWh_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Variable O&M ",2015.0
+waste CHP CC,VOM,54.1103,EUR/MWh_e,Combination of waste CHP CC and solid biomass boiler steam,,2015.0
 waste CHP CC,c_b,0.2947,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Cb coefficient",2015.0
 waste CHP CC,c_v,1.0,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Cv coefficient",2015.0
-waste CHP CC,efficiency,0.2102,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Electricity efficiency, net, annual average",2015.0
-waste CHP CC,efficiency-heat,0.762,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Heat efficiency, net, annual average",2015.0
-waste CHP CC,investment,8307.058,EUR/kW_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Nominal investment ",2015.0
+waste CHP CC,efficiency,0.1637,per unit,Combination of waste CHP CC and solid biomass boiler steam,,2015.0
+waste CHP CC,efficiency-heat,0.8959,per unit,Combination of waste CHP CC and solid biomass boiler steam,,2015.0
+waste CHP CC,investment,11403.6689,EUR/kW_e,Combination of waste CHP CC and solid biomass boiler steam,,2015.0
 waste CHP CC,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","08 WtE CHP, Large, 50 degree:  Technical lifetime",2015.0
 water tank charger,efficiency,0.9,per unit,HP, from old pypsa cost assumptions,2015.0
 water tank discharger,efficiency,0.9,per unit,HP, from old pypsa cost assumptions,2015.0
