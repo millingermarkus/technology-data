@@ -102,7 +102,6 @@ dea_sheet_names = {
     "central gas CHP CC": "04 Gas turb. simple cycle, L",
     "central solid biomass CHP": "09a Wood Chips, Large 50 degree",
     "central solid biomass CHP CC": "09a Wood Chips, Large 50 degree",
-    "central solid biomass CHP powerboost CC": "09a Wood Chips, Large 50 degree",
     "central air-sourced heat pump": "40 Comp. hp, airsource 3 MW",
     "central geothermal heat source": "45.1.b Geothermal DH, 2000m, E",
     "central excess-heat-sourced heat pump": "40 Comp. hp, excess heat 10 MW",
@@ -174,7 +173,6 @@ uncrtnty_lookup = {
     "central hydrogen CHP": "I:J",
     "central solid biomass CHP": "I:J",
     "central solid biomass CHP CC": "I:J",
-    "central solid biomass CHP powerboost CC": "I:J",
     "solar": "",
     "central air-sourced heat pump": "J:K",
     "central geothermal heat source": "H:K",
@@ -3197,11 +3195,7 @@ def energy_penalty(cost_dataframe: pd.DataFrame) -> pd.DataFrame:
         "direct firing gas CC",
         "biogas CC",
     ]:
-        if "powerboost" in tech_name:
-            boiler = "electric boiler steam"
-            feedstock = "solid biomass"
-            co2_capture = cost_dataframe.loc[(feedstock, "CO2 intensity"), "value"]
-        elif "biogas" in tech_name:
+        if "biogas" in tech_name:
             boiler = "gas boiler steam"
             co2_capture = cost_dataframe.loc[(tech_name, "CO2 stored"), "value"]
         elif "gas" in tech_name:

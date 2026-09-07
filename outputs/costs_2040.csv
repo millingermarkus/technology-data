@@ -815,14 +815,6 @@ central solid biomass CHP CC,efficiency,0.2103,per unit,Combination of central s
 central solid biomass CHP CC,efficiency-heat,0.9398,per unit,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
 central solid biomass CHP CC,investment,4917.5537,EUR/kW_e,Combination of central solid biomass CHP CC and solid biomass boiler steam,,2015.0
 central solid biomass CHP CC,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Technical lifetime",2015.0
-central solid biomass CHP powerboost CC,FOM,2.8591,%/year,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Fixed O&M",2015.0
-central solid biomass CHP powerboost CC,VOM,4.8953,EUR/MWh_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Variable O&M ",2015.0
-central solid biomass CHP powerboost CC,c_b,0.3465,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Cb coefficient",2015.0
-central solid biomass CHP powerboost CC,c_v,1.0,50°C/100°C,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Cv coefficient",2015.0
-central solid biomass CHP powerboost CC,efficiency,0.2675,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Electricity efficiency, net, annual average",2015.0
-central solid biomass CHP powerboost CC,efficiency-heat,0.8269,per unit,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Heat efficiency, net, annual average",2015.0
-central solid biomass CHP powerboost CC,investment,3442.0984,EUR/kW_e,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Nominal investment ",2015.0
-central solid biomass CHP powerboost CC,lifetime,25.0,years,"Danish Energy Agency, inputs/technology_data_for_el_and_dh.xlsx","09a Wood Chips, Large 50 degree:  Technical lifetime",2015.0
 central water pit charger,efficiency,1.0,per unit,"Danish Energy Agency, inputs/technology_data_catalogue_for_energy_storage.xlsx",:  Charger efficiency,2020.0
 central water pit discharger,efficiency,1.0,per unit,"Danish Energy Agency, inputs/technology_data_catalogue_for_energy_storage.xlsx",:  Discharger efficiency,2020.0
 central water pit storage,Bottom storage temperature,35.0,⁰C,"Danish Energy Agency, inputs/technology_data_catalogue_for_energy_storage.xlsx",140 PTES seasonal:  Typical bottom storage temperature,2020.0
