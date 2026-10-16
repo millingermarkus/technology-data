@@ -141,6 +141,7 @@ dea_sheet_names = {
     "cement capture": "401.c Post comb - Cement kiln",
     "BioSNG": "84 Gasif. CFB, Bio-SNG",
     "BtL": "85 Gasif. Ent. Flow FT, liq fu ",
+    "HVO": "92 HVO jet fuel",
     "biomass-to-methanol": "97 Methanol from biomass gasif.",
     "biogas plus hydrogen": "99 SNG from methan. of biogas",
     "methanolisation": "98 Methanol from hydrogen",
@@ -208,6 +209,7 @@ uncrtnty_lookup = {
     "biomass boiler capture": "I:J",
     "BioSNG": "I:J",
     "BtL": "J:K",
+    "HVO": "J:K",
     "biomass-to-methanol": "J:K",
     "biogas plus hydrogen": "J:K",
     "industrial heat pump medium temperature": "H:I",
@@ -248,6 +250,7 @@ cost_year_2020 = [
     "cement capture",
     "BioSNG",
     "BtL",
+    "HVO",
     "biomass-to-methanol",
     "biogas plus hydrogen",
     "methanolisation",
@@ -984,6 +987,19 @@ def get_data_DEA(
     if "biochar pyrolysis" in tech_name:
         df = biochar_pyrolysis_harmonise_dea(df)
 
+    if tech_name == "HVO":
+        print(df)
+        df.drop(
+                    df.loc[
+                        df.index.str.contains(
+                            "000 t HVO", regex=False
+                        )
+                    ].index,
+                    inplace=True,
+                )
+        print(df)
+        input('')
+
     elif tech_name == "central geothermal heat source":
         # we need to convert from costs per MW of the entire system (including heat pump)
         # to costs per MW of the geothermal heat source only
@@ -1526,6 +1542,10 @@ def clean_up_units(
     technology_dataframe.unit = technology_dataframe.unit.str.replace(
         "mill. EUR", "EUR"
     )
+    technology_dataframe.loc[
+        technology_dataframe.unit.str.contains("M EUR"), value_column
+    ] *= 1e6
+    technology_dataframe.unit = technology_dataframe.unit.str.replace("M EUR", "EUR")
 
     technology_dataframe.loc[
         technology_dataframe.unit.str.contains("1000EUR"), value_column
@@ -1629,6 +1649,9 @@ def clean_up_units(
     )
     technology_dataframe.unit = technology_dataframe.unit.str.replace(
         "FT Liquids Output, MWh/MWh Total Input", "MWh_FT/MWh_H2"
+    )
+    technology_dataframe.unit = technology_dataframe.unit.str.replace(
+        "MW HVO Jet", "MW_HVO"
     )
     # biomass-to-methanol-specific
     if isinstance(technology_dataframe.index, pd.MultiIndex):
@@ -1934,6 +1957,7 @@ def order_data(years: list, technology_dataframe: pd.DataFrame) -> pd.DataFrame:
                 | (df.unit == "EUR/MW input")
                 | (df.unit == "EUR/t_N2/h")  # air separation unit
                 | (df.unit == "EUR/MW_biochar")
+                | (df.unit == "EUR/MW_HVO")
             )
         ].copy()
 

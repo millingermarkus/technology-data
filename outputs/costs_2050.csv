@@ -379,6 +379,10 @@ HVDC submarine,lifetime,40.0,years,"Danish Energy Agency, Technology Data for En
 HVDC underground,FOM,2.5,%/year,"Danish Energy Agency, Technology Data for Energy Transport (July 2025), https://ens.dk/en/analyses-and-statistics/technology-data-transport-energy, Excel datasheet: 1.7 el trans AC&DC cables.",,2025.0
 HVDC underground,investment,3400.0,EUR/MW/km,"Danish Energy Agency, Technology Data for Energy Transport (July 2025), https://ens.dk/en/analyses-and-statistics/technology-data-transport-energy, Excel datasheet: 1.7 el trans AC&DC cables.",,2025.0
 HVDC underground,lifetime,40.0,years,"Danish Energy Agency, Technology Data for Energy Transport (July 2025), https://ens.dk/en/analyses-and-statistics/technology-data-transport-energy, Excel datasheet: 1.7 el trans AC&DC cables.",,2025.0
+HVO,FOM,5.0,%/year,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",92 HVO jet fuel:  Fixed O&M,2020.0
+HVO,VOM,11.3656,EUR/MWh,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",92 HVO jet fuel:  Variable O&M,2025.0
+HVO,investment,953.9176,EUR/kW_HVO,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",92 HVO jet fuel:  Specific investment,2025.0
+HVO,lifetime,25.0,years,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",92 HVO jet fuel:  Technical lifetime,2020.0
 Haber-Bosch,FOM,3.0,%/year,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",103 Hydrogen to Ammonia:  Fixed O&M,2015.0
 Haber-Bosch,VOM,0.0284,EUR/MWh_NH3,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx",103 Hydrogen to Ammonia:  Variable O&M,2025.0
 Haber-Bosch,efficiency-heat,0.146,per unit,"Danish Energy Agency, inputs/data_sheets_for_renewable_fuels.xlsx","103 Hydrogen to Ammonia:  High value heat Output + District Heating Output,",2015.0
